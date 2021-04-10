@@ -1,0 +1,13 @@
+<mat-card >
+    <mat-card-header>
+        <mat-form-field class="example-full-width">
+            <mat-label>Usuário do Github</mat-label>
+            <input matInput placeholder="mouragilvan" value="mouragilvan" (keypress)="pesquisar($event)">
+          </mat-form-field>         
+    </mat-card-header>
+    <mat-nav-list  >   
+        <mat-list role="list"  *ngIf="list.length > 0">
+            <mat-list-item class="item-list"  *ngFor="let item of list" role="listitem" class="item-list">{{item?.description}}</mat-list-item>
+        </mat-list>   
+    </mat-nav-list>
+</mat-card>
