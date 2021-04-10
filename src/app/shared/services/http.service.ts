@@ -15,4 +15,8 @@ export class HttpService {
         return this.http.get(`${environment.urlBackend}/users/${user}/repos`);
    }
 
+   getUser(user): Observable <any> {
+      return this.http.get(`${environment.urlBackend}/users/${user}`);
+  }
+
 }
