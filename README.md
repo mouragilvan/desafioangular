@@ -1,27 +1,30 @@
 # DesafioAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
 
-## Development server
+### Angular 11.2.8
+### Angular Material
+### NgRx
+### Flex Layout
+### Testes Unitários
+### Layout Responsivo
+### Github API
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Rodar o projeto
+Step 1.  Fazer o clone do projeto do Github
+Step 2.  Rodar o comando `npm install`
+Step 3.  Rodar o comando ou os comandos para o start do projeto localmente: `ng serve` ou `npm start`
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Start
+Run `npm start` to execute the application in browser at port 5200
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Run unit tests / Rodar testes unitarios
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
