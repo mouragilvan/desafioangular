@@ -4,11 +4,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { Modal } from './modal.component';
 import { Observable, timer } from 'rxjs';
 import { Store, select } from '@ngrx/store';
-import { increment, decrement, reset, initial, LoadDataBegin } from '../shared/ngrx/actions';
+import {  LoadDataBegin } from '../shared/ngrx/actions';
 
-class User {
-  name = 'XIL'
-}
 
 @Component({
   selector: 'app-home',
@@ -24,7 +21,7 @@ export class HomeComponent implements OnInit {
 
 
 
-  constructor(private service: HttpService,
+  constructor(public service: HttpService,
     public dialog: MatDialog, private store: Store<{ user: any }>) {
 
     this.user$ = this.store.pipe(
