@@ -17,7 +17,8 @@
     </mat-card-header>
     <mat-nav-list>
         <mat-list role="list" *ngIf="list.length > 0">
-            <mat-list-item class="item-list" *ngFor="let item of list" role="listitem" class="item-list">
+            <mat-list-item class="item-list" *ngFor="let item of list" role="listitem" 
+            class="item-list" (click)="modal(item)">
                 {{item?.description}}</mat-list-item>
         </mat-list>
     </mat-nav-list>

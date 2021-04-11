@@ -6,6 +6,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatInputModule  } from '@angular/material/input';
 import { HomeComponent } from './home.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { Modal } from './modal.component';
 @NgModule({
     imports: [
       CommonModule,
@@ -13,10 +15,13 @@ import { HomeComponent } from './home.component';
       MatCardModule,
       MatFormFieldModule, 
       MatInputModule,
-      FlexLayoutModule   
+      FlexLayoutModule,
+      MatDialogModule,
+         
     ],
     declarations: [
-        HomeComponent
+        HomeComponent,
+        Modal
     ]
 })
 export class HomeModule {

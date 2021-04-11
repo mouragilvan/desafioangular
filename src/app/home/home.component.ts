@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../shared/services/http.service';
+import {MatDialog} from '@angular/material/dialog';
+import { Modal } from './modal.component';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +13,7 @@ export class HomeComponent implements OnInit {
    list = [];
    user : any;
 
-  constructor(private service: HttpService) { }
+  constructor(private service: HttpService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.service.getRepositories('mouragilvan').subscribe(
@@ -64,5 +66,13 @@ export class HomeComponent implements OnInit {
 
   }
 
+  modal(item):void{
+    console.log(item);
+    const dialogRef = this.dialog.open(Modal, {
+      width: '250px',
+      data: item
+    });
+         
+  }
 
 }
