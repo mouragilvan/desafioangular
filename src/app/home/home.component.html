@@ -1,13 +1,26 @@
-<mat-card >
-    <mat-card-header>
-        <mat-form-field class="example-full-width">
+<div fxLayout="row" fxLayoutAlign="center stretch" class="mt-4">
+    <div fxLayout="row" fxFlex="none">
+         <mat-form-field class="example-full-width" flex fxFlex="100">
             <mat-label>Usuário do Github</mat-label>
-            <input matInput placeholder="mouragilvan" value="mouragilvan" (keypress)="pesquisar($event)">
-          </mat-form-field>         
+            <input matInput placeholder="mouragilvan" value="mouragilvan" (keyup)="pesquisar($event)">
+        </mat-form-field>
+    </div>
+    
+</div>
+<div fxLayout="row" fxLayoutAlign="center stretch" >
+  <mat-card class="box-shadow max-width height-100"   >
+    <mat-card-header>        
+        <mat-card-title>{{user?.name}}</mat-card-title>
+        <mat-card-subtitle>{{user?.bio}}</mat-card-subtitle>
+        <div mat-card-avatar class="example-header-image"
+        style="background-image: url('{{user?.avatar_url}}');"></div>
     </mat-card-header>
-    <mat-nav-list  >   
-        <mat-list role="list"  *ngIf="list.length > 0">
-            <mat-list-item class="item-list"  *ngFor="let item of list" role="listitem" class="item-list">{{item?.description}}</mat-list-item>
-        </mat-list>   
+    <mat-nav-list>
+        <mat-list role="list" *ngIf="list.length > 0">
+            <mat-list-item class="item-list" *ngFor="let item of list" role="listitem" 
+            class="item-list" (click)="modal(item)">
+                {{item?.description}}</mat-list-item>
+        </mat-list>
     </mat-nav-list>
-</mat-card>
+</mat-card>  
+</div>
