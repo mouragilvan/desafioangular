@@ -10,7 +10,7 @@
 <div fxLayout="row" fxLayoutAlign="center stretch" >
   <mat-card class="box-shadow max-width height-100"   >
     <mat-card-header>        
-        <mat-card-title>{{user?.name}}</mat-card-title>
+        <mat-card-title>{{(user$|async)?.name}}</mat-card-title>
         <mat-card-subtitle>{{user?.bio}}</mat-card-subtitle>
         <div mat-card-avatar class="example-header-image"
         style="background-image: url('{{user?.avatar_url}}');"></div>
@@ -18,7 +18,7 @@
     <mat-nav-list>
         <mat-list role="list" *ngIf="list.length > 0">
             <mat-list-item class="item-list" *ngFor="let item of list" role="listitem" 
-            class="item-list" (click)="modal(item)">
+            class="item-list" (click)="modal(item)" [ng-if]="item && item.description != ''">
                 {{item?.description}}</mat-list-item>
         </mat-list>
     </mat-nav-list>
