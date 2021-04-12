@@ -17,6 +17,7 @@ Step 2.  Rodar o comando `npm install`
 Step 3.  Rodar o comando ou os comandos para o start do projeto localmente: `ng serve` ou `npm start`
 <br>
 Tudo saindo como planejado, deve apresentar esta tela:
+<br>
 <img src="inicio.png">
 
 ## Build
