@@ -29,13 +29,13 @@ describe('HomeComponent', () => {
     fixture.detectChanges();
   });
 
- 
+
 });
 */
 
-describe('TESTE API', () => {
-  //TO DO testes de chamada de api 
-});
+//describe('TESTE API', () => {
+  //TO DO testes de chamada de api
+//});
 
 describe('HomeComponent', () => {
   beforeEach(async () => {
@@ -58,11 +58,11 @@ describe('HomeComponent', () => {
     const fixture = TestBed.createComponent(HomeComponent);
     const app = fixture.componentInstance;
     const user = app.service.getUser('mouragilvan');
-    user.subscribe(success => {     
+    user.subscribe(success => {
       //Se colocar outro valor, vai estourar o erro
       expect(success?.name).toEqual('Gilvan Moura');
     })
-    done();    
+    done();
   });
 });
 
