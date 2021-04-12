@@ -21,12 +21,12 @@ Tudo saindo como planejado, deve apresentar esta tela:
 <img src="inicio.png">
 
 ## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Para gerar a build, execute o comando  `ng build`.
+<br>
 
 ## Run unit tests / Rodar testes unitarios
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Execute o comando `ng test` para rodar os testes via [Karma](https://karma-runner.github.io).
 <br>
 Obs.: O comando deve abrir uma janela no navegador exemplo: `http://localhost:9876/`
 
