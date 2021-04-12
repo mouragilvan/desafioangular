@@ -10,9 +10,11 @@
 ### Github API
 
 ## Rodar o projeto
-#### Step 1.  Fazer o clone do projeto do Github
-#### Step 2.  Rodar o comando `npm install`
-#### Step 3.  Rodar o comando ou os comandos para o start do projeto localmente: `ng serve` ou `npm start`
+Step 1.  Fazer o clone do projeto do Github
+<br>
+Step 2.  Rodar o comando `npm install`
+<br>
+Step 3.  Rodar o comando ou os comandos para o start do projeto localmente: `ng serve` ou `npm start`
 
 
 ## Start
@@ -25,6 +27,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Run unit tests / Rodar testes unitarios
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<br>
+Obs.: O comando deve abrir uma janela no navegador exemplo: `http://localhost:9876/`
 
-
-
+<img src="teste.png">
