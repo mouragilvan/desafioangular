@@ -15,10 +15,9 @@ Step 1.  Fazer o clone do projeto do Github
 Step 2.  Rodar o comando `npm install`
 <br>
 Step 3.  Rodar o comando ou os comandos para o start do projeto localmente: `ng serve` ou `npm start`
-
-
-## Start
-Run `npm start` to execute the application in browser at port 5200
+<br>
+Tudo saindo como planejado, deve apresentar esta tela:
+<img src="inicio.png">
 
 ## Build
 
