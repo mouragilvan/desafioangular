@@ -64,6 +64,7 @@ export class HomeComponent implements OnInit {
       this.service.getUser(event.target.value).subscribe(
         response => {
           this.user = response;
+          this.store.dispatch(new LoadDataBegin(response));
         },
         error => {
           if (error.status != 404) {
