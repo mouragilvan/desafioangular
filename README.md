@@ -28,6 +28,6 @@ Para gerar a build, execute o comando  `ng build`.
 
 Execute o comando `ng test` para rodar os testes via [Karma](https://karma-runner.github.io).
 <br>
-Obs.: O comando deve abrir uma janela no navegador exemplo: `http://localhost:9876/`
+Obs.: O comando deve abrir uma janela no navegador. Exemplo: `http://localhost:9876/`
 
 <img src="teste.png">
