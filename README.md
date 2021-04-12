@@ -15,9 +15,9 @@ Step 1.  Fazer o clone do projeto do Github
 Step 2.  Rodar o comando `npm install`
 <br>
 Step 3.  Rodar o comando ou os comandos para o start do projeto localmente: `ng serve` ou `npm start`
-<br>
+<br><br>
 Tudo saindo como planejado, deve apresentar esta tela:
-<br>
+<br><br>
 <img src="inicio.png">
 
 ## Build
